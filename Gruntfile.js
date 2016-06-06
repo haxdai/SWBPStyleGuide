@@ -15,13 +15,16 @@ module.exports = function (grunt) {
 
   // Automatically load required grunt tasks
   require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin',
+    buildcontrol: 'grunt-build-control'
   });
 
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'dist',
+    deployrepo: 'https://github.com/haxdai/SWBPStyleGuide.git',//Change accordingly
+    deploybranch:'gh-pages' //Change accordingly,
   };
 
   // Define the configuration for all the tasks
@@ -298,6 +301,21 @@ module.exports = function (grunt) {
       }
     },
 
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit:true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: '<%= config.deployrepo %>',
+          branch: '<%= config.deploybranch %>'
+        }
+      }
+    },
+
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
@@ -434,6 +452,10 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('deploy', [
+    'buildcontrol:pages'
   ]);
 
   grunt.registerTask('default', [
