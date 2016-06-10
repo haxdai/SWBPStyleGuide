@@ -1,6 +1,12 @@
 /************************* MIXINS SASS *************************/
 
 /************************ Fuentes ************************/
+@mixin rippleEffect {
+  background-image: radial-gradient(circle, $color-link-active 10%, $color-link 11%); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-size: 1000%;
+}
+
 @mixin fontPrimary {
 	color: $color-text-primary;
     font-size: 13px;
