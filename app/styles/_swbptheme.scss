@@ -20,7 +20,7 @@ $color-background-main: #1c2b36;
 $color-background-main-active: darken($color-background-main, 5%);//#131e26;
 
 $color-text-primary: #3c3c3a;
-$color-text-highlight: #979797;
+$color-text-highlight: lighten($color-text-primary, 35%);//#979797;
 
 $color-highlight: #f9ae3b;
 $color-highlight-active: darken($color-highlight, 7%);//#f4a031;
