@@ -23,6 +23,15 @@
 .background-color-ok { background-color: $color-status-ok; }
 .background-color-overdue { background-color: $color-status-overdue; }
 .background-color-aborted { background-color: $color-status-aborted; }
+.panel-body {
+	.swbp-modal {
+		.modal-dialog {
+			@media (max-width: $breakpoint-small - 1) {
+				margin:5px;
+			}
+		}
+	}
+}
 .panel-footer {
 	code, pre {
 		background-color: $color-background-content;
