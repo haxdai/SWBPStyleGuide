@@ -11,6 +11,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css(.) styles/vendor.css -->
+    <link rel="stylesheet" href="/bower_components/prism/themes/prism.css">
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -45,8 +46,12 @@
                   <h1 class="section-header">Introducción</h1>
                   <p>La presente es una guía para la adaptación de la imagen gráfica de SWBProcess.</p>
                   <h3>Uso</h3>
-                  <p>Bastará con agregar la clase swbp-body al contenedor donde se necesite aplicar los estilos de SWBProcess. Este contenedor puede ser el tag <code class="swbp-code">&lt;body&gt;</code> o algún otro elemento de bloque. Para aplicarlo por ejemplo a todo el cuerpo del documento HTML:</p>
-                  <pre class="swbp-code">&lt;!DOCTYPE HTML&gt;<br>&lt;body class="swbp-body"&gt;<br>...<br>&lt;/body&gt;</pre>
+                  <p>Bastará con agregar la clase swbp-body al contenedor donde se necesite aplicar los estilos de SWBProcess. Este contenedor puede ser el tag <code>&lt;body&gt;</code> o algún otro elemento de bloque. Para aplicarlo por ejemplo a todo el cuerpo del documento HTML:</p>
+                  <div class="panel panel-default">
+                    <div class="panel-footer">
+                      <pre><code class="lang-html">&lt;!DOCTYPE HTML&gt;</code><br><code class="lang-html">&lt;body class="swbp-body"&gt;</code><br><code>...</code><br><code class="lang-html">&lt;/body&gt;</code></pre>
+                    </div>
+                  </div>
                 </section>
                 <section>
                   <h1 class="section-header">Paleta de colores</h1>
@@ -182,17 +187,79 @@
                         </tbody>
                       </table>
                     </div>
+                    <div class="panel-footer">
+                      <pre><code class="lang-html">&lt;h1&gt;h1. SWBProcess Heading&lt;/h1&gt;</code><br><code class="lang-html">&lt;h2&gt;h2. SWBProcess Heading&lt;/h2&gt;</code><br><code class="lang-html">&lt;h3&gt;h3. SWBProcess Heading&lt;/h3&gt;</code><br><code class="lang-html">&lt;h4&gt;h4. SWBProcess Heading&lt;/h4&gt;</code><br><code class="lang-html">&lt;h5&gt;h5. SWBProcess Heading&lt;/h5&gt;</code><br><code class="lang-html">&lt;h6&gt;h6. SWBProcess Heading&lt;/h6&gt;</code></pre>
+                    </div>
                   </div>
                 </section>
+                <section>
+                  <h1 class="section-header">Botones</h1>
+                  <h3>Tags para botones</h3>
+                  <p>Pueden usarse los tags para botones utilizados en bootstrap, es decir: <code>&lt;a&gt;</code> o <code>&lt;button&gt;</code>. La modificación particular para la imagen de SWBProcess consiste en hacer planos  y cuadrados los botones.</p>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <a class="btn btn-default">Default</a>
+                      <a class="btn btn-primary">Primary</a>
+                      <a class="btn btn-success">Success</a>
+                      <a class="btn btn-info">Info</a>
+                      <a class="btn btn-warning">Warning</a>
+                      <a class="btn btn-danger">Danger</a>
+                      <a class="btn btn-link">Link</a>
+                    </div>
+                    <div class="panel-footer">
+                      <pre><code class="lang-html">&lt;a href="#" class="btn btn-default"&gt;Default&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-primary"&gt;Primary&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-success"&gt;Success&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-info"&gt;Info&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-warning"&gt;Warning&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-danger"&gt;Danger&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-link"&gt;Link&lt;/a&gt;</code></pre>
+                    </div>
+                  </div>
+                  <h3>Clases especiales para botones</h3>
+                  <p>Existen dos clases que particularmente diferencían los botones en SWBProcess de acuerdo a su utilidad en la UI. Estas son: <code>btn-swbp-action</code> y <code>btn-swbp-action-head</code>. La primer clase se utiliza en botones de acción principal dentro de los componentes de SWBProcess, mientras que la segunda se aplica en la barra superior de la interfaz y se ajusta en tamaño cuando se despliega como menú colapsado.</p>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <a href="#" class="btn btn-swbp-action">Action button</a>
+                      <button class="btn btn-swbp-action">Action button</button>
+                      <a class="btn btn-swbp-action-head">Action header button</a>
+                      <button class="btn btn-swbp-action-head">Action header button</button>
+                    </div>
+                    <div class="panel-footer">
+                      <pre><code class="lang-html">&lt;a href="#" class="btn btn-swbp-action"&gt;Action button&lt;/a&gt;</code><br><code class="lang-html">&lt;button class="btn btn-swbp-action"&gt;Action button&lt;/button&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-swbp-action-head"&gt;Action header button&lt;/a&gt;</code><br><code class="lang-html">&lt;button class="btn btn-swbp-action-head"&gt;Action header button&lt;/button&gt;</code></pre>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <h1 class="section-header">Diálogos Modales</h1>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="modal static-modal swbp-modal" tabindex="-1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close"aria-hidden="true">&times;</button>
+                              <h5 class="modal-title">Diálogo modal</h5>
+                            </div>
+                            <div class="modal-body">
+                              <p>Sample content</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="submit" class="btn btn-default pull-right col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                              <span class="fa fa-hand-o-right fa-fw"></span>Aceptar
+                              </button>
+                              <button type="button" class="btn btn-default pull-right col-lg-3 col-md-3 col-sm-6 col-xs-6" data-dismiss="modal">
+                              <span class="fa fa-arrow-left fa-fw"></span>Cancelar
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer">
+                      <pre><code class="lang-html">&lt;div class="modal swbp-modal" tabindex="-1"&gt;</code><br>  <code class="lang-html">&lt;div class="modal-dialog"&gt;</code><br><code class="lang-html">    &lt;div class="modal-content"&gt;</code><br><code class="lang-html">      &lt;div class="modal-header"&gt;</code><br><code class="lang-html">        &lt;button type="button" class="close" aria-hidden="true"&gt;&times;&lt;/button&gt;</code><br><code class="lang-html">        &lt;h5 class="modal-title"&gt;Diálogo modal&lt;/h5&gt;</code><br><code class="lang-html">      &lt;/div&gt;</code><br><code class="lang-html">      &lt;div class="modal-body"&gt;</code><br><code class="lang-html">        &lt;p&gt;Sample content&lt;/p&gt;</code><br><code class="lang-html">      &lt;/div&gt;</code><br><code class="lang-html">      &lt;div class="modal-footer"&gt;</code><br><code class="lang-html">        &lt;button type="submit" class="btn btn-default pull-right col-lg-3 col-md-3 col-sm-6 col-xs-6"&gt;</code><br><code class="lang-html">          &lt;span class="fa fa-hand-o-right fa-fw"&gt;&lt;/span&gt;Aceptar</code><br><code class="lang-html">        &lt;/button></code><br><code class="lang-html">        &lt;button type="button" class="btn btn-default pull-right col-lg-3 col-md-3 col-sm-6 col-xs-6" data-dismiss="modal"&gt;</code><br><code class="lang-html">          &lt;span class="fa fa-arrow-left fa-fw"&gt;&lt;/span&gt;Cancelar</code><br><code class="lang-html">        &lt;/button&gt;</code><br><code class="lang-html">      &lt;/div&gt;</code><br><code class="lang-html">    &lt;/div&gt;</code><br><code class="lang-html">  &lt;/div&gt;</code><br><code class="lang-html">&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                  </section>
                 <section>
                   <h1 class="section-header">Playground</h1>
                   <ul class="list">
                     <li>
                       <a href="taskinbox.html">Bandeja de tareas</a>
-                      <ul>
-                        <li><a href="">Atender tarea</a></li>
-                        <li><a href="">Mapa de estado</a></li>
-                      </ul>
                     </li>
                     <li>
                       <a href="">Documentación</a>
@@ -242,6 +309,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/prism/prism.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

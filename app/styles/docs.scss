@@ -1,12 +1,6 @@
 @import "_swbptheme.scss";
 
-.swbp-body {
-	.swbp-code {
-        background-color: $color-background-main;
-        color: $color-text-highlight;
-    }
-}
-
+.static-modal { position: relative !important; display: block; }
 .white-color { color: $white-color; }
 .white-color-background { background-color: $white-color; }
 .black-color { color: $black-color; }
@@ -29,17 +23,9 @@
 .background-color-ok { background-color: $color-status-ok; }
 .background-color-overdue { background-color: $color-status-overdue; }
 .background-color-aborted { background-color: $color-status-aborted; }
-/*$textColor-Primary: #3c3c3a;
-$textColor-Secundary: #979797;
-$accentColor: #f9ae3b;
-$accentColor-Click: #f4a031;
-$window-background: #e8e8eb;
-$window-background-400: #1c1c1c;
-$content-background: #f5f5f6;
-$border-color: #d8d8d8;
-$panelHead-color: #7f94a3;
-$iconLogin-color: #6e7f8e;
-$finished-color: #7cb342;
-$pending-color: #e53935;
-$aborted-color: #1e88e5;
-$tableBg-color:#fff;*/
+.panel-footer {
+	code, pre {
+		background-color: $color-background-content;
+		border: none;
+	}
+}
