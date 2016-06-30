@@ -18,7 +18,7 @@
 }
 
 @mixin fontPrimary {
-	color: $color-text-primary;
+  color: $color-text-primary;
     font-size: 13px;
 }
 @mixin fontPrimary-Light {
@@ -34,7 +34,7 @@
     font-size: 13px;
 }
 @mixin fontLink{
-	color: $color-link;
+  color: $color-link;
     font-size: 13px;
 }
 @mixin fontHeadline {

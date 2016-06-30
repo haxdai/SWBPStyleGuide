@@ -1,43 +1,38 @@
 @import "mixins/_mixins.scss";
 
 .swbp-modal {
-    //background-color: $color-background-content;
-    //border-radius: 0;
-    
-	.modal-dialog {
-		//background-color: $color-background-content;
+    .modal-dialog {
+        .modal-content {
+            background-color: $color-background-content;
+            border-radius: 0;           
+        }
 
-		.modal-content {
-			background-color: $color-background-content;
-			border-radius: 0;			
-		}
+        .modal-header {
+            background-color: $color-link;
 
-		.modal-header {
-			background-color: $color-link;
+            .modal-title {
+                color: $white-color;
+            }
 
-			.modal-title {
-	        	color: $white-color;
-	    	}
+            button.close {
+                color: $white-color;
+                opacity: 1;
 
-	    	button.close {
-	    		color: $white-color;
-	    		opacity: 1;
+                &:active, &:focus {
+                    outline: 0;
+                }
+            }
+        }
 
-	    		&:active, &:focus {
-	    			outline: 0;
-	    		}
-	    	}
-	    }
+        .modal-footer {
+            padding:0px;
+            border-top: 1px solid $color-border-main;
+        }
 
-	    .modal-footer {
-	    	padding:0px;
-	    	border-top: 1px solid $color-border-main;
-	    }
-
-	    .modal-footer .btn+.btn {
-		    margin:0;
-		}
-	}
+        .modal-footer .btn+.btn {
+                margin:0;
+            }
+    }
  
     /*.modal-body{
         @include fontPrimary;

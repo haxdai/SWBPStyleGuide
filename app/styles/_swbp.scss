@@ -296,7 +296,7 @@ html, body{
             font-weight: bold;
         }
     }
-
+    
     .table {
         .btn-default {
             background-color: $white-color !important;
@@ -311,21 +311,6 @@ html, body{
             padding: 1em 0;
             font-size: 0.8em;
             font-weight: normal;
-        }
-    }
-
-    /*-------Repository entries-------*/
-    .swbp-list-element {
-        background-color: $color-background-content;
-        //min-height: 36px;
-        margin: 0px;
-        margin-bottom: 6px;
-        line-height: 2em;
-        border: 1px solid $color-border-main;
-
-        .swbp-list-icon {
-            color: $color-highlight;
-            padding-right:2em;
         }
     }
 
@@ -359,6 +344,23 @@ html, body{
     code, pre {
         color: $color-text-highlight;
         background-color: $color-background-main;
+    }
+    
+    /*-------task highlight colors-----------*/
+    .task-highlight-428bca {
+        fill: #428bca !important;
+    }
+    .task-highlight-5cb85c {
+        fill: #5cb85c !important;
+    }
+    .task-highlight-5bc0de {
+        fill: #5bc0de !important;
+    }
+    .task-highlight-f0ad4e {
+        fill: #f0ad4e !important;
+    }
+    .task-highlight-d9534f {
+        fill: #d9534f !important;
     }
 
     @import "_panels.scss";
@@ -490,9 +492,9 @@ html, body{
         font-size: 36px !important;
     }
 
-    /*.swbp-list-element {
+    .swbp-list-element {
         margin-bottom: 6px!important;
-    }*/
+    }
     .swbp-toolbar-model {
         padding-left: 2% !important;
     }
@@ -747,33 +749,33 @@ hr {
 /************* Controles de selección ******************/
 
 label.css-label{
-	background-image: url(#{$imgPath}/activar.svg);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select:none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+    background-image: url(#{$imgPath}/activar.svg);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select:none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 input[type=radio].css-checkbox{
-	display: none;
+    display: none;
 }
 input[type=radio].css-checkbox + label.css-label{
-	@include selectionControls;
+    @include selectionControls;
 }
 input[type=radio].css-checkbox:checked + label.css-label{
-	background-position: 0 -24px;
+    background-position: 0 -24px;
 }
 
 input[type=checkbox].css-checkbox{
-	display: none;
+    display: none;
 }
 input[type=checkbox].css-checkbox + label.css-label{
-	@include selectionControls;
+    @include selectionControls;
 }
 input[type=checkbox].css-checkbox:checked + label.css-label{
-	background-position: 0 -24px;
+    background-position: 0 -24px;
 }
 
 /************************* PLECA AQUA *************************/
@@ -1112,19 +1114,19 @@ ul#relatedTab {
     outline: 0px;
 }
 /************************* ELEMENTOS EN LISTA *************************/
-/*.swbp-list-element {
+.swbp-list-element {
     min-height: 36px;
     margin: 0px;
     margin-bottom: 6px;
-}*/
+}
 .swbp-list-title{
     padding: 0px;
     @include panelContainer;
 }
-/*.swbp-list-icon{
+.swbp-list-icon{
     @include iconList;
     background-color: $color-background-content;
-}*/
+}
 .swbp-list-number{
     padding: 8px 0px 0px 0px;
     text-align: center;
@@ -1651,12 +1653,12 @@ ul#relatedTab {
     margin: 0;
     margin-bottom: 6px;
     
-    /*.swbp-list-icon{
+    .swbp-list-icon{
         padding: 0px;
         color: $color-highlight;
         font-size: 20px;
         @include panelContainer;
-    } */ 
+    }  
     
     .swbp-list-text{
          padding: 8px;
