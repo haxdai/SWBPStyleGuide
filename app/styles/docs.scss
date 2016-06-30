@@ -38,3 +38,16 @@
 		border: none;
 	}
 }
+
+.swbp-body {
+	.swbp-page-content {
+		padding-top: 15px;
+		@media (max-width: $breakpoint-small) {
+			padding: 0 !important;
+		}
+	}
+
+	article {
+		padding:15px;
+	}
+}

@@ -47,11 +47,14 @@
                   <p>La presente es una guía para la adaptación de la imagen gráfica de SWBProcess.</p>
                   <h3>Uso</h3>
                   <p>Bastará con agregar la clase swbp-body al contenedor donde se necesite aplicar los estilos de SWBProcess. Este contenedor puede ser el tag <code>&lt;body&gt;</code> o algún otro elemento de bloque. Para aplicarlo por ejemplo a todo el cuerpo del documento HTML:</p>
-                  <div class="panel panel-default">
-                    <div class="panel-footer">
-                      <pre><code class="lang-html">&lt;!DOCTYPE HTML&gt;</code><br><code class="lang-html">&lt;body class="swbp-body"&gt;</code><br><code>...</code><br><code class="lang-html">&lt;/body&gt;</code></pre>
-                    </div>
-                  </div>
+                  <pre>
+                    <code>
+&lt;!DOCTYPE HTML&gt;
+&lt;body class="swbp-body"&gt;
+...
+&lt;/body&gt;
+                    </code>
+                  </pre>
                 </section>
                 <section>
                   <h1 class="section-header">Paleta de colores</h1>
@@ -167,7 +170,7 @@
                   <div class="panel panel-default">
                     <div class="panel-body">
                       <div class="table-responsive">
-                        <table class="table table-bordered swbp-table">
+                        <table class="table">
                           <tbody>
                             <tr>
                               <td><h1>h1. SWBProcess Heading</h1></td>
@@ -192,7 +195,12 @@
                       </div>
                     </div>
                     <div class="panel-footer">
-                      <pre><code class="lang-html">&lt;h1&gt;h1. SWBProcess Heading&lt;/h1&gt;</code><br><code class="lang-html">&lt;h2&gt;h2. SWBProcess Heading&lt;/h2&gt;</code><br><code class="lang-html">&lt;h3&gt;h3. SWBProcess Heading&lt;/h3&gt;</code><br><code class="lang-html">&lt;h4&gt;h4. SWBProcess Heading&lt;/h4&gt;</code><br><code class="lang-html">&lt;h5&gt;h5. SWBProcess Heading&lt;/h5&gt;</code><br><code class="lang-html">&lt;h6&gt;h6. SWBProcess Heading&lt;/h6&gt;</code></pre>
+                      <pre><code class="lang-html">&lt;h1&gt;h1. SWBProcess Heading&lt;/h1&gt;
+&lt;h2&gt;h2. SWBProcess Heading&lt;/h2&gt;
+&lt;h3&gt;h3. SWBProcess Heading&lt;/h3&gt;
+&lt;h4&gt;h4. SWBProcess Heading&lt;/h4&gt;
+&lt;h5&gt;h5. SWBProcess Heading&lt;/h5&gt;
+&lt;h6&gt;h6. SWBProcess Heading&lt;/h6&gt;</code></pre>
                     </div>
                   </div>
                 </section>
@@ -211,7 +219,13 @@
                       <a class="btn btn-link">Link</a>
                     </div>
                     <div class="panel-footer">
-                      <pre><code class="lang-html">&lt;a href="#" class="btn btn-default"&gt;Default&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-primary"&gt;Primary&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-success"&gt;Success&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-info"&gt;Info&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-warning"&gt;Warning&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-danger"&gt;Danger&lt;/a&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-link"&gt;Link&lt;/a&gt;</code></pre>
+                      <pre><code class="lang-html">&lt;a href="#" class="btn btn-default"&gt;Default&lt;/a&gt;
+&lt;a href="#" class="btn btn-primary"&gt;Primary&lt;/a&gt;
+&lt;a href="#" class="btn btn-success"&gt;Success&lt;/a&gt;
+&lt;a href="#" class="btn btn-info"&gt;Info&lt;/a&gt;
+&lt;a href="#" class="btn btn-warning"&gt;Warning&lt;/a&gt;
+&lt;a href="#" class="btn btn-danger"&gt;Danger&lt;/a&gt;
+&lt;a href="#" class="btn btn-link"&gt;Link&lt;/a&gt;</code></pre>
                     </div>
                   </div>
                   <h3>Clases especiales para botones</h3>
@@ -224,7 +238,8 @@
                       <button class="btn btn-swbp-action-head">Action header button</button>
                     </div>
                     <div class="panel-footer">
-                      <pre><code class="lang-html">&lt;a href="#" class="btn btn-swbp-action"&gt;Action button&lt;/a&gt;</code><br><code class="lang-html">&lt;button class="btn btn-swbp-action"&gt;Action button&lt;/button&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-swbp-action-head"&gt;Action header button&lt;/a&gt;</code><br><code class="lang-html">&lt;button class="btn btn-swbp-action-head"&gt;Action header button&lt;/button&gt;</code></pre>
+                      <pre><code class="lang-html">&lt;a href="#" class="btn btn-swbp-action"&gt;Action button&lt;/a&gt;
+&lt;button class="btn btn-swbp-action"&gt;Action button&lt;/button&gt;</code><br><code class="lang-html">&lt;a href="#" class="btn btn-swbp-action-head"&gt;Action header button&lt;/a&gt;</code><br><code class="lang-html">&lt;button class="btn btn-swbp-action-head"&gt;Action header button&lt;/button&gt;</code></pre>
                     </div>
                   </div>
                 </section>
@@ -255,7 +270,27 @@
                       </div>
                     </div>
                     <div class="panel-footer">
-                      <pre><code class="lang-html">&lt;div class="modal swbp-modal" tabindex="-1"&gt;</code><br>  <code class="lang-html">&lt;div class="modal-dialog"&gt;</code><br><code class="lang-html">    &lt;div class="modal-content"&gt;</code><br><code class="lang-html">      &lt;div class="modal-header"&gt;</code><br><code class="lang-html">        &lt;button type="button" class="close" aria-hidden="true"&gt;&times;&lt;/button&gt;</code><br><code class="lang-html">        &lt;h5 class="modal-title"&gt;Diálogo modal&lt;/h5&gt;</code><br><code class="lang-html">      &lt;/div&gt;</code><br><code class="lang-html">      &lt;div class="modal-body"&gt;</code><br><code class="lang-html">        &lt;p&gt;Sample content&lt;/p&gt;</code><br><code class="lang-html">      &lt;/div&gt;</code><br><code class="lang-html">      &lt;div class="modal-footer"&gt;</code><br><code class="lang-html">        &lt;button type="submit" class="btn btn-default pull-right col-lg-3 col-md-3 col-sm-6 col-xs-6"&gt;</code><br><code class="lang-html">          &lt;span class="fa fa-hand-o-right fa-fw"&gt;&lt;/span&gt;Aceptar</code><br><code class="lang-html">        &lt;/button></code><br><code class="lang-html">        &lt;button type="button" class="btn btn-default pull-right col-lg-3 col-md-3 col-sm-6 col-xs-6" data-dismiss="modal"&gt;</code><br><code class="lang-html">          &lt;span class="fa fa-arrow-left fa-fw"&gt;&lt;/span&gt;Cancelar</code><br><code class="lang-html">        &lt;/button&gt;</code><br><code class="lang-html">      &lt;/div&gt;</code><br><code class="lang-html">    &lt;/div&gt;</code><br><code class="lang-html">  &lt;/div&gt;</code><br><code class="lang-html">&lt;/div&gt;</code></pre>
+                      <pre><code class="lang-html">&lt;div class="modal swbp-modal" tabindex="-1"&gt;
+  &lt;div class="modal-dialog"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" aria-hidden="true"&gt;&times;&lt;/button&gt;
+        &lt;h5 class="modal-title"&gt;Diálogo modal&lt;/h5&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        &lt;p&gt;Contenido...&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="submit" class="btn btn-default pull-right col-lg-3 col-md-3 col-sm-6 col-xs-6"&gt;
+          &lt;span class="fa fa-hand-o-right fa-fw"&gt;&lt;/span&gt;Aceptar
+        &lt;/button&gt;
+        &lt;button type="button" class="btn btn-default pull-right col-lg-3 col-md-3 col-sm-6 col-xs-6" data-dismiss="modal"&gt;
+          &lt;span class="fa fa-arrow-left fa-fw"&gt;&lt;/span&gt;Cancelar
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                   </div>
                 </section>
@@ -310,7 +345,185 @@
                         </div>
                       </div>
                     <div class="panel-footer">
-                      <pre><code class="lang-html">&lt;div class="panel swbp-input-tray"&gt;</code><br><code class="lang-html">  &lt;div class="panel-header status-ok"&gt;&lt;/div&gt;</code><br><code class="lang-html">  &lt;div class="panel-body"&gt;</code><br><code class="lang-html">    &lt;div class="row"&gt;</code><br><code class="lang-html">      &lt;div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 text-highlight"&gt;241&lt;/div&gt;</code><br><code class="lang-html">      &lt;div class="col-lg-11 col-md-11 col-sm-11 col-xs-10"&gt;</code><br><code class="lang-html">        &lt;div class="row"&gt;</code><br><code class="lang-html">          &lt;div class="col-xs-12 swbp-tray-process-title"&gt;Registrar el pedido&lt;/div&gt;</code><br><code class="lang-html">        &lt;/div&gt;</code><br><code class="lang-html">        &lt;div class="row"&gt;</code><br><code class="lang-html">          &lt;div class="col-xs-12"&gt;Proceso: Requisición de nuevos muebles&lt;/div&gt;</code><br><code class="lang-html">        &lt;/div&gt;</code><br><code class="lang-html">        &lt;div class="row"&gt;</code><br><code class="lang-html">          &lt;div class="col-xs-12"&gt;&lt;small&gt;&lt;i&gt;Inicio de la Tarea: 31/05/16 - 13:39&lt;/i&gt;&lt;/small&gt;&lt;/div&gt;</code><br><code class="lang-html">        &lt;/div&gt;</code><br><code class="lang-html">      &lt;/div&gt;</code><br><code class="lang-html">    &lt;/div&gt;</code><br><code class="lang-html">  &lt;/div&gt;</code><br><code class="lang-html">  &lt;div class="panel-footer"&gt;</code><br><code class="lang-html">    &lt;div class="row no-margin"&gt;</code><br><code class="lang-html">      &lt;a href="#" class="btn btn-default col-xs-3"&gt;</code><br><code class="lang-html">        &lt;span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fa fa-hand-o-up"&gt;&lt;/span&gt;</code><br><code class="lang-html">        &lt;span class="col-lg-8 col-md-8 hidden-sm hidden-xs no-padding text-left"&gt;Atender&lt;/span&gt;</code><br><code class="lang-html">      &lt;/a&gt;</code><br><code class="lang-html">      &lt;a class="btn btn-default col-xs-3" href="#"&gt;</code><br><code class="lang-html">        &lt;span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fa fa-exchange"&gt;&lt;/span&gt;</code><br><code class="lang-html">        &lt;span class="col-lg-8 col-md-8 hidden-sm hidden-xs no-padding text-left"&gt;Reasignar tarea&lt;/span&gt;</code><br><code class="lang-html">      &lt;/a&gt;</code><br><code class="lang-html">      &lt;a class="btn btn-default col-xs-3" href="#"&gt;</code><br><code class="lang-html">        &lt;span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fa fa-sitemap fa-rotate-270"&gt;&lt;/span&gt;</code><br><code class="lang-html">        &lt;span class="col-lg-8 col-md-8 hidden-sm hidden-xs no-padding text-left"&gt;Ver mapa&lt;/span&gt;</code><br><code class="lang-html">      &lt;/a&gt;</code><br><code class="lang-html">    &lt;/div&gt;</code><br><code class="lang-html">  &lt;/div&gt;</code><br><code class="lang-html">&lt;/div&gt;</code></pre>
+                      <pre><code class="lang-html">&lt;div class="panel swbp-input-tray"&gt;
+  &lt;div class="panel-header status-ok"&gt;&lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 text-highlight"&gt;241&lt;/div&gt;
+      &lt;div class="col-lg-11 col-md-11 col-sm-11 col-xs-10"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-xs-12 swbp-tray-process-title"&gt;Registrar el pedido&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-xs-12"&gt;Proceso: Requisición de nuevos muebles&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-xs-12"&gt;&lt;small&gt;&lt;i&gt;Inicio de la Tarea: 31/05/16 - 13:39&lt;/i&gt;&lt;/small&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-footer"&gt;
+    &lt;div class="row no-margin"&gt;
+      &lt;a href="#" class="btn btn-default col-xs-3"&gt;
+        &lt;span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fa fa-hand-o-up"&gt;&lt;/span&gt;
+        &lt;span class="col-lg-8 col-md-8 hidden-sm hidden-xs no-padding text-left"&gt;Atender&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a class="btn btn-default col-xs-3" href="#"&gt;
+        &lt;span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fa fa-exchange"&gt;&lt;/span&gt;
+        &lt;span class="col-lg-8 col-md-8 hidden-sm hidden-xs no-padding text-left"&gt;Reasignar tarea&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;a class="btn btn-default col-xs-3" href="#"&gt;
+        &lt;span class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fa fa-sitemap fa-rotate-270"&gt;&lt;/span&gt;
+        &lt;span class="col-lg-8 col-md-8 hidden-sm hidden-xs no-padding text-left"&gt;Ver mapa&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                  <p>Esta misma clase es usada para mostrar la información de las entradas en la sección de colaboración de SWBProcess. La estructura HTML usada en este caso se muestra abajo.</p>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="panel swbp-input-tray">
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h4 class="media-heading">Título de entrada en Blog</h4>
+                                    <small><i>Hasdai Pacheco</i> - 29/04/2014 - 12:04:06</small>
+                                    <hr>
+                                    <p>Texto de entrada en Blog</p>
+                                    <p class="text-right">
+                                        <span class="fa fa-comment-o fa-fw"></span>1
+                                        <span class="fa fa-eye fa-fw"></span>4
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row no-margin">
+                                <a class="btn btn-default col-xs-12" href="" role="button">Seguir leyendo</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-footer">
+                      <pre><code class="lang-html">&lt;div class="panel swbp-input-tray"&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;div class="media"&gt;
+      &lt;div class="media-body"&gt;
+        &lt;h4 class="media-heading"&gt;Título de entrada en Blog&lt;/h4&gt;
+        &lt;small&gt;&lt;i&gt;Hasdai Pacheco&lt;/i&gt; - 29/04/2014 - 12:04:06&lt;/small&gt;
+        &lt;hr&gt;
+        &lt;p&gt;Texto de entrada en Blog&lt;/p&gt;
+        &lt;p class="text-right"&gt;
+          &lt;span class="fa fa-comment-o fa-fw"&gt;&lt;/span&gt;1
+          &lt;span class="fa fa-eye fa-fw"&gt;&lt;/span&gt;4
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-footer"&gt;
+    &lt;div class="row no-margin"&gt;
+      &lt;a class="btn btn-default col-xs-12" href="" role="button">Seguir leyendo&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <h1 class="section-header">Formularios</h1>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <form class="form-horizontal swbp-form">
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Texto</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Número</label>
+                          <div class="col-sm-8">
+                            <input type="number" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Color</label>
+                          <div class="col-sm-8">
+                            <input type="color" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Fecha</label>
+                          <div class="col-sm-8">
+                            <input type="date" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Select</label>
+                          <div class="col-sm-8">
+                            <select class="form-control">
+                              <option>Opción 1</option>
+                              <option>Opción 2</option>
+                              <option>Opción 3</option>
+                              <option>Opción 4</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Password</label>
+                          <div class="col-sm-8">
+                            <input type="password" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Checkbox</label>
+                          <div class="col-sm-8">
+                            <input type="checkbox" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Radio</label>
+                          <div class="col-sm-8">
+                            <input type="radio" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="" class="col-sm-3 control-label">Textarea</label>
+                          <div class="col-sm-8 col-xs-12">
+                            <textarea class="form-control"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">Archivo *</label>
+                            <div class="col-sm-8">
+                              <input type="file" name="ffile" id="ffile" class="form-control" required="required">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default">Aceptar</button>
+                        <button type="button" class="btn btn-default">Cancelar</button>
+                      </form>
+                    </div>
+                    <div class="panel-footer">
+                      <pre><code class="lang-html">&lt;form class="form-horizontal swbp-form"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="" class="col-sm-3 control-label"&gt;Texto&lt;/label&gt;
+    &lt;div class="col-sm-8"&gt;
+      &lt;input type="text" class="form-control"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="" class="col-sm-3 control-label"&gt;Número&lt;/label&gt;
+    &lt;div class="col-sm-8"&gt;
+      &lt;input type="number" class="form-control"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ...
+  &lt;button type="submit" class="btn btn-default"&gt;Aceptar&lt;/button&gt;
+  &lt;button type="button" class="btn btn-default"&gt;Cancelar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
                     </div>
                   </div>
                 </section>
@@ -341,7 +554,7 @@
                       </ul>
                     </li>
                     <li>
-                      <a href="">Repositorio</a>
+                      <a href="repository.html">Repositorio</a>
                       <ul>
                         <li><a href="">Listado de versiones</a></li>
                       </ul>

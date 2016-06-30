@@ -1,5 +1,17 @@
 @import "mixins/_mixins.scss";
 
+.swbp-button-ribbon {
+    @media (max-width: $breakpoint-small) {
+        .btn {
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+    min-height: 42px;
+    margin-top: 15px;
+}
+
 .btn {
     border-radius: 0px;
     text-transform: uppercase;
@@ -10,6 +22,7 @@
 }
 
 .btn-default {
+    font-size: 0.9em;
     color: $color-text-highlight;
     background-color: $color-background-content;
     border: solid 1px $color-border-main;
@@ -22,7 +35,8 @@
 
 .btn-swbp-action {
     @include buttonRaised;
-    
+    min-width: 200px;
+
     &:active {
         background-color: $color-link;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -37,6 +51,26 @@
         background-color: $color-link-active;
         color: $white-color;
         outline: 0px;
+    }
+}
+
+.btn-swbp-action-float {
+    @include floatButton (50px, 20);
+    color: $color-text-highlight;
+    background-color: $color-background-content;
+    
+    .fa {
+        line-height: 2em;
+        font-size: 1.5em;
+    }
+}
+
+.swbp-img-card {
+    .btn-swbp-action-float {
+        color: $white-color;
+        background-color: $color-primary;
+        right: 25px;
+        bottom: 20px;
     }
 }
 

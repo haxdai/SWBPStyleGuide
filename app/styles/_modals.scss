@@ -28,10 +28,15 @@
 	    		}
 	    	}
 	    }
+
 	    .modal-footer {
 	    	padding:0px;
 	    	border-top: 1px solid $color-border-main;
 	    }
+
+	    .modal-footer .btn+.btn {
+		    margin:0;
+		}
 	}
  
     /*.modal-body{

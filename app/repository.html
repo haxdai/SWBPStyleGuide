@@ -2,7 +2,7 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8">
-    <title>SWBPStyleGuide - TaskInbox</title>
+    <title>SWBPStyleGuide - Repository</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,7 +50,7 @@
               </div>
             <div class="collapse navbar-collapse MENU-COLAPSABLE">
               <ul class="nav navbar-nav">
-                <li class="active">
+                <li>
                   <a href="">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fa fa-inbox text-center swbp-menu-icon"></div>
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 swbp-menu-text">Bandeja<span class="badge">4</span></div>
@@ -62,7 +62,7 @@
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 swbp-menu-text">Documentación</div>
                   </a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 fa fa-archive text-center swbp-menu-icon"></div>
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-8 swbp-menu-text">Repositorio</div>
@@ -120,13 +120,104 @@
           </div>
           <div class="row">
             <div class="col-lg-12 col-mdd-12 col-sm-12 col-xs-12 swbp-page-title">
-              <span>|</span> Bandeja de tareas
+              <span>|</span> Repositorio
             </div>
           </div>
         </div>
         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 swbp-page-content">
-          <button class="btn btn-default">Ver</button>
-          <a class="btn btn-default">Ver</a>
+          <div class="row no-margin swbp-button-ribbon text-right">
+              <a href="" class="btn btn-swbp-action" onclick="return false;">Agregar archivo</a>
+              <a href="" class="btn btn-swbp-action" onclick="return false;">Agregar directorio</a>
+          </div>
+          <hr>
+          <ol class="breadcrumb swbp-breadcrumb">
+            <li><span class="fa fa-archive"></span></li>
+            <li><a href="#">MAAGTIC</a></li>
+            <li><a href="#">Estrategicos</a></li>
+            <li><a href="#">Planeación estratégica</a></li>
+            <li><a href="#">Gestión de la planeación</a></li>
+            <li><a href="#">Formatos</a></li>
+          </ol>
+          <div class="row swbp-list-element">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+              <span class="fa fa-file-text fa-lg swbp-list-icon"></span><a href="#">Formato de alta de mobiliario</a>
+              <span class="pull-right">hh</span>
+                <!--div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 fa fa-file-text"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-10">
+                    <a href="#">ff</a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-2">
+                14/jun/2016 - 05:11
+                </div-->
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 no-padding">
+              <a href="#" title="Propiedades" class="btn btn-default col-xs-3"><span class="fa fa-info-circle"></span></a>
+              <a href="#" title="Eliminar" class="btn btn-default col-xs-3"><span class="fa fa-trash-o"></span></a>
+              <a href="#" title="Agregar nueva versión" class="btn btn-default col-xs-3"><span class="fa fa-cloud-upload"></span></a>
+              <a href="#" title="Ver historial de versiones" class="btn btn-default col-xs-3"><span class="fa fa-sort-numeric-asc"></span></a>
+                        
+                </div>
+            </div>
+            
+            <div class="swbp-list-element">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 swbp-list-title">
+                     
+                     <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 fa fa-folder-open swbp-list-icon"></div>
+                    
+         
+                    
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 swbp-list-text">
+                    <a href="/es/demo/Nueva_carpeta" title="Mostrar archivos">Nueva carpeta2</a>
+                    </div>
+                    
+                
+                <div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-2 swbp-list-date">
+                14/jun/2016 - 05:09
+                </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 swbp-list-action">
+                    <a href="/es/demo/Repository/_rid/56/_mto/3/_mod/props?fid=Nueva_carpeta&type=directory" title="Propiedades" class="btn btn-default  col-xs-4  fa fa-info-circle" data-toggle="modal" data-target="#modalDialog"></a>
+                        
+                    <a href="/es/demo/Repository/_rid/56/_mto/3/_mod/editFolder?fid=Nueva_carpeta&type=directory" title="Propiedades" class="btn btn-default col-xs-4 fa fa-pencil" data-toggle="modal" data-target="#modalDialog"></a>
+                        
+                        
+                    <a href="/es/demo/Repository/_aid/56/_act/removefile?fid=http%3A%2F%2Fwww.demo.swb%23WebPage%3ANueva_carpeta&act=remove" onclick="if (!confirm('¿Estás seguro de querer eliminar el archivo Nueva carpeta2?'))
+                                return false;" title="Eliminar" class="btn btn-default  col-xs-4  fa fa-trash-o"></a>
+                        
+                </div>
+            </div>
+            
+            <div class="swbp-list-element">
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 swbp-list-title">
+                     
+                     <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 fa fa-link swbp-list-icon"></div>
+                    
+         
+                    
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 swbp-list-text">
+                    <a target="_blank" href="http://www.facebook.com">ss</a>
+                    </div>
+                    
+                
+                <div class="col-lg-3 col-md-3 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-2 swbp-list-date">
+                14/jun/2016 - 05:28
+                </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 swbp-list-action">
+                    <a href="/es/demo/Repository/_rid/56/_mto/3/_mod/props?fid=1&verNum=2&type=url" title="Propiedades" class="btn btn-default col-xs-3 fa fa-info-circle" data-toggle="modal" data-target="#modalDialog"></a>
+                        
+                        
+                    <a href="/es/demo/Repository/_aid/56/_act/removefile?fid=http%3A%2F%2Fwww.demo.swb%23swp_RepositoryURL%3A1&act=remove" onclick="if (!confirm('¿Estás seguro de querer eliminar el archivo ss?'))
+                                return false;" title="Eliminar" class="btn btn-default col-xs-3 fa fa-trash-o"></a>
+                        
+                    <a href="/es/demo/Repository/_rid/56/_mto/3/_mod/addFile?fid=1&type=url" title="Agregar nueva versión" class="btn btn-default col-xs-3" data-toggle="modal" data-target="#modalDialog"><span class="fa fa-cloud-upload"></span></a>
+                        
+                    <a href="/es/demo/Repository/_rid/56/_mod/versionHistory?fid=1&type=url" title="Ver historial de versiones" class="btn btn-default col-xs-3 fa fa-sort-numeric-asc"></a>
+                        
+                </div>
+            </div>
         </div>
       </div>
     </div>

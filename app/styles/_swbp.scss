@@ -1,6 +1,5 @@
 @import "mixins/_mixins.scss";
 @import "_swbptheme.scss";
-@import "_breadcrumb.scss";
 @import "_table-responsive.scss";
 
 //Roboto font face
@@ -298,6 +297,12 @@ html, body{
         }
     }
 
+    .table {
+        .btn-default {
+            background-color: $white-color !important;
+        }
+    }
+
     /*--------Row of filters----------*/
     .swbp-filters * {
         text-transform: uppercase;
@@ -306,6 +311,21 @@ html, body{
             padding: 1em 0;
             font-size: 0.8em;
             font-weight: normal;
+        }
+    }
+
+    /*-------Repository entries-------*/
+    .swbp-list-element {
+        background-color: $color-background-content;
+        //min-height: 36px;
+        margin: 0px;
+        margin-bottom: 6px;
+        line-height: 2em;
+        border: 1px solid $color-border-main;
+
+        .swbp-list-icon {
+            color: $color-highlight;
+            padding-right:2em;
         }
     }
 
@@ -344,6 +364,9 @@ html, body{
     @import "_panels.scss";
     @import "_pagination.scss";
     @import "_modals.scss";
+    @import "_breadcrumbs.scss";
+    @import "_forms.scss";
+    @import "_tables.scss";
     /*---------------Button styling----------------*/
     @import "_buttons.scss";
 }
@@ -372,11 +395,6 @@ html, body{
 
 .no-padding {
     padding: 0 !important;
-}
-
-.swbp-button-ribbon {
-    min-height: 42px;
-    margin-top: 15px;
 }
 
 #swbp-fondo-400{
@@ -472,9 +490,9 @@ html, body{
         font-size: 36px !important;
     }
 
-    .swbp-list-element {
+    /*.swbp-list-element {
         margin-bottom: 6px!important;
-    }
+    }*/
     .swbp-toolbar-model {
         padding-left: 2% !important;
     }
@@ -690,19 +708,19 @@ html, body{
     .swbp-modal-property{
         text-align: left !important;
     }
-    .modal-dialog{
+    /*.modal-dialog{
         margin: 32px;
-    }
+    }*/
     .swbp-list-date{
         text-align: left !important;
     }
     .swbp-btn-filter {
         margin-top: 10px;
     }
-    .modal .modal-body .swbp-captcha img {
+    /*.modal .modal-body .swbp-captcha img {
         width: 100% !important; 
         height: 60px !important;
-    }
+    }*/
 
 }
 /************************* GENERICOS *************************/
@@ -1094,19 +1112,19 @@ ul#relatedTab {
     outline: 0px;
 }
 /************************* ELEMENTOS EN LISTA *************************/
-.swbp-list-element {
+/*.swbp-list-element {
     min-height: 36px;
     margin: 0px;
     margin-bottom: 6px;
-}
+}*/
 .swbp-list-title{
     padding: 0px;
     @include panelContainer;
 }
-.swbp-list-icon{
+/*.swbp-list-icon{
     @include iconList;
     background-color: $color-background-content;
-}
+}*/
 .swbp-list-number{
     padding: 8px 0px 0px 0px;
     text-align: center;
@@ -1209,62 +1227,7 @@ ul#relatedTab {
     padding: 10px 0px 0px 0px;
     text-transform: uppercase;
 }
-/************************* BREADCRUMS *************************/
-.swbp-breadcrumbs {
-    min-height: $button-default-height;
-    background-color: $color-background-window;
-    padding: 0px;
-    @include fontCaption; 
-    
-    ol.breadcrumb {
-        margin-bottom: 0px;
-        background-color: transparent;
-        padding: 14px 24px 0px 0px;
-    }    
-}
 
-.breadCrumbHolder {
-    margin: 0px;
-}
-
-.breadCrumb {
-    padding: 14px 10px 0px 0px;
-    border: 0px;
-    background: transparent;
-    height: auto;
-    
-    ul li{
-        height: auto;
-        background: url(#{$imgPath}/ChevronOverlayProcess.png) no-repeat 100% 0;
-    }   
-    
-    ul li.first a
-    {
-        width:0px !important;
-        background:none;
-    }    
-    
-    ul li.last
-    {
-        background:none;
-    }    
-    
-    ol li{
-        height: auto;
-        background: url(#{$imgPath}/ChevronOverlayProcess.png) no-repeat 100% 0;
-    } 
-    
-    ol li.first a
-    {
-        width:0px !important;
-        background:none;
-    }  
-    
-    ol li.last
-    {
-        background:none;
-    }    
-}
 /************************* BOTON PARA SUBIR CON SCRIP *************************/
 .go-top {
     @include buttonFloatAction-Gotop;
@@ -1390,7 +1353,7 @@ ul#relatedTab {
     }    
 }
 /******************** BLOG ********************/
-.swbp-panel-blog{
+/*.swbp-panel-blog{
     @include panelCollaboration;
 
     h2{
@@ -1444,7 +1407,7 @@ ul#relatedTab {
         border-top: solid 1px $color-border-main;
         border-radius: 0px;
     }
-}
+}*/
 
 .swbp-panel-blog-button{
     padding: 0px;
@@ -1482,29 +1445,7 @@ ul#relatedTab {
     }    
 }
 
-.swbp-blog-post-comment{
-    padding: 16px;
-    @include panelContainer;
-
-    form{
-        
-        .form-group{
-            margin-bottom: 16px;
-        }   
-        
-        label {
-            margin-bottom: 0px;
-
-            h6{
-                padding: 9px 0px;
-                margin: 0px 0px 7px;
-            }    
-        }        
-    }
-    
-}
-
-textarea.swbp-form-control{
+/*textarea.swbp-form-control{
     border-radius: 0px;
     padding: 8px 16px;
     @include textarea;
@@ -1514,7 +1455,7 @@ textarea.swbp-form-control{
         -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
     }    
-}
+}*/
 
 .swbp-comment{
     padding: 16px;
@@ -1710,12 +1651,12 @@ textarea.swbp-form-control{
     margin: 0;
     margin-bottom: 6px;
     
-    .swbp-list-icon{
+    /*.swbp-list-icon{
         padding: 0px;
         color: $color-highlight;
         font-size: 20px;
         @include panelContainer;
-    }  
+    } */ 
     
     .swbp-list-text{
          padding: 8px;
@@ -1868,15 +1809,12 @@ textarea.swbp-form-control{
     height: auto;
     padding: 8px 16px;
 }
-.modal-footer .btn+.btn {
-    margin-bottom: 0;
-    margin-left: 0px;
-}
-.swbp-modal-textarea textarea {
+
+/*.swbp-modal-textarea textarea {
     border-radius: 4px;
     padding: 8px;
     @include textarea;
-}
+}*/
 /******************** BANDEJA ********************/
 .swbp-btn-filter{
     @include panelContainer;
@@ -1994,13 +1932,13 @@ ul.swbp-btn-dropdown li a{
     text-transform: uppercase;
     padding: 0px;
 }
-select.form-control{
+/*select.form-control{
     @include select;
     
     &:focus{
         @include inputFocus;
     }    
-}
+}*/
 .panel.swbp-tray-chart{
     padding: 16px;
     background-color: transparent;
